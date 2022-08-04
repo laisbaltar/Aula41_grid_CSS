@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Mesa de trabalho</title>
+</head>
+<style type="text/css">
+    body {
+        background-color: rgb(0, 162, 232);
+    }
+
+    .lista {
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        background-color: whitesmoke;
+        padding: 20px;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        list-style-type: none;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(100, 97, 97);
+        font-size: 20px;
+    }
+
+    .lista-item {
+        border-left: 0;
+        border-right: 0;
+        border-top: 0;
+        border-bottom: 1px;
+        border-style: solid;
+        border-color: rgb(144, 145, 146);
+    }
+    .lista-item:last-child{
+        border-bottom: none;
+    }
+
+    .cartao {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-area: auto;
+        margin-left: 10px;
+        gap: 20px;
+    }
+
+    .cartao__imagem {
+        border-radius: 50%;
+        max-width: 150px;
+    }
+    .cartao__titulo{
+        margin-bottom: 0;
+    }
+    .cartao__endereco{
+        margin-top: 10px;
+        color: rgb(179, 178, 178);
+    }
+    @media (max-width: 720px) {
+        body {
+        background-color: rgb(226, 105, 49);
+    }
+    }
+</style>
+
+<body>
+    <ul class="lista">
+        <li class="lista-item">
+            <figure class="cartao">
+                <img class="cartao__imagem" src="https://media-exp1.licdn.com/dms/image/C4D03AQEP90ZXPes73A/profile-displayphoto-shrink_200_200/0/1654027766064?e=1665014400&v=beta&t=u9tolgsAhoOVikUi57wSue3rndx_ojWSpquxxrc8uic"
+                    alt="Foto do usuário">
+                <figcaption class="cartao__corpo">
+                    <h4 class="cartao__titulo">Laís Baltar</h4>
+                    <p class="cartao__endereco">Palmas - TO</p>
+                </figcaption>
+            </figure>
+        </li>
+
+        <li class="lista-item">
+            <figure class="cartao">
+                <img class="cartao__imagem" src="https://media-exp1.licdn.com/dms/image/C4E03AQEDHhycyJRuLw/profile-displayphoto-shrink_200_200/0/1654027322875?e=1665014400&v=beta&t=A-IkKXyUCmh13X00CovmzwpSZOe2Ne4-TZ0S3YqPIJs"
+                    alt="Foto do usuário">
+                <figcaption class="cartao__corpo">
+                    <h4 class="cartao__titulo">Amanda Barreto</h4>
+                    <p class="cartao__endereco">Manaus - AM</p>
+                </figcaption>
+            </figure>
+        </li>
+
+        <li class="lista-item">
+            <figure class="cartao">
+                <img class="cartao__imagem" src="https://media-exp1.licdn.com/dms/image/C4E03AQFvnJSm9ih15Q/profile-displayphoto-shrink_200_200/0/1627938298781?e=1665014400&v=beta&t=FXLihezDWmBbE8VsgstjjYPKjVjgXGojm5eg0LUxDHQ"
+                    alt="Foto do usuário">
+                <figcaption class="cartao__corpo">
+                    <h4 class="cartao__titulo">Renata Kim</h4>
+                    <p class="cartao__endereco">São Paulo - SP</p>
+                </figcaption>
+            </figure>
+        </li>
+
+        <li class="lista-item">
+            <figure class="cartao">
+                <img class="cartao__imagem" src="https://media-exp1.licdn.com/dms/image/C4E03AQE_dm9njib40g/profile-displayphoto-shrink_200_200/0/1559937749011?e=1665014400&v=beta&t=iNZMGW7nP0SIZCn_lcfw44adMYitUnv2ZWD8fnuZ-vg"
+                    alt="Foto do usuário">
+                <figcaption class="cartao__corpo">
+                    <h4 class="cartao__titulo">Willian Sant'Anna</h4>
+                    <p class="cartao__endereco">Rio de Janeiro - RJ</p>
+                </figcaption>
+            </figure>
+        </li>
+
+    </ul>
+
+</body>
+
+</html>
